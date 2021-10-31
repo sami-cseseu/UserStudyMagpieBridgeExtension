@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MagpieBridge</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.2.5/cytoscape.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.2.2/cytoscape-dagre.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('active');
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Project Information</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Task</p>
+                
+               <li> <a href='#Product2009930530' data-toggle='collapse' aria-expanded='false' class='dropdown-toggle'>
+                      Product.java
+                      <br/><small>(4 locations)</small></a>
+                    <ul class='collapse list-unstyled' id='Product2009930530'><li>
+                            <a class='node-line' href='#' node='n0'>Line 7</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n1'>Line 9</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n2'>Line 13</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n3'>Line 21</a>
+                        </li></ul></li><li> <a href='#Formater1030925621' data-toggle='collapse' aria-expanded='false' class='dropdown-toggle'>
+                      Formater.java
+                      <br/><small>(10 locations)</small></a>
+                    <ul class='collapse list-unstyled' id='Formater1030925621'><li>
+                            <a class='node-line' href='#' node='n8'>Line 3</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n9'>Line 4</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n10'>Line 5</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n11'>Line 11</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n12'>Line 12</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n13'>Line 16</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n14'>Line 17</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n15'>Line 18</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n16'>Line 6</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n17'>Line 8</a>
+                        </li></ul></li><li> <a href='#Product72500783' data-toggle='collapse' aria-expanded='false' class='dropdown-toggle'>
+                      Product.java
+                      <br/><small>(4 locations)</small></a>
+                    <ul class='collapse list-unstyled' id='Product72500783'><li>
+                            <a class='node-line' href='#' node='n4'>Line 29</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n5'>Line 32</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n6'>Line 34</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n7'>Line 37</a>
+                        </li></ul></li><li> <a href='#Notification15807336' data-toggle='collapse' aria-expanded='false' class='dropdown-toggle'>
+                      Notification.java
+                      <br/><small>(4 locations)</small></a>
+                    <ul class='collapse list-unstyled' id='Notification15807336'><li>
+                            <a class='node-line' href='#' node='n18'>Line 3</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n19'>Line 12</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n20'>Line 13</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n21'>Line 14</a>
+                        </li></ul></li><li> <a href='#Channel1562178941' data-toggle='collapse' aria-expanded='false' class='dropdown-toggle'>
+                      Channel.java
+                      <br/><small>(4 locations)</small></a>
+                    <ul class='collapse list-unstyled' id='Channel1562178941'><li>
+                            <a class='node-line' href='#' node='n22'>Line 3</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n23'>Line 6</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n24'>Line 7</a>
+                        </li><li>
+                            <a class='node-line' href='#' node='n25'>Line 11</a>
+                        </li></ul></li>
+              
+               
+               
+
+            </ul>
+
+          
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+
+                </div>
+            </nav>
+
+           
+               
+            <h1>
+                Welcome to MagpieBridge Data Flow Page!
+            </h1>
+            <div class="row">
+                <script>
+                    if (typeof acquireVsCodeApi != 'undefined'){window.vscode = acquireVsCodeApi();}
+                </script>
+                <div class="col-md-12 alert alert-danger">
+                 
+                    <h5>
+                        Problem: Tainted data from source to sink.
+                    </h5>
+                  
+                </div>
+                <div class="col-md-12">
+                    <div id="cy"></div>
+                </div>
+            </div>
+                
+            <script>
+                var cy = cytoscape({
+  container: document.getElementById('cy'),  style: [{
+      selector: 'node',
+      style: {
+        label: 'data(value)',
+        'text-valign': 'center',
+        'text-halign': 'center',
+        'text-wrap': 'wrap',
+        'text-max-width': 260,
+        'width': 280,
+        'background-fit': 'contain',
+        'background-color': '#007bff',
+        'color': '#fff',
+        'shape': 'roundrectangle',
+        'height': 24,
+        'border-width': 1,
+        'padding-right': 5,
+        'padding-left': 5,
+        'padding-top': 5,
+        'padding-bottom': 5,
+        'text-events': 'yes',
+        'font-size': 12,
+      }
+    },
+    {
+      selector: 'edge',
+      style: {
+        'label': 'data(label)',
+        'width': 1,
+        'curve-style': 'bezier',
+        'line-color': 'black',
+        'line-style': 'solid',
+        'target-arrow-shape': 'triangle-backcurve',
+        'target-arrow-color': 'black',
+        'text-halign' : 'right',
+        //'text-margin-x': 20,
+        'color':'red',
+        'font-size': '12px',
+      }
+    },
+    {
+      selector: '$node > node',
+      style: {
+        'text-rotation': '-90deg',
+        'text-halign': 'left',
+        'text-margin-x': -10,
+        'text-margin-y': -40,
+      }
+    },
+    {
+      selector: '.Badge',
+      style: {
+        'border-width': 3,
+      }
+    },
+  ],
+  minZoom: 0.5,
+  maxZoom: 1.5,
+  zoomingEnabled: true,
+  userZoomingEnabled: true,
+  autoungrabify: false,
+  autounselectify: true,
+  grabbable: false, 
+  pannable: false, 
+  locked: true,
+});
+  let options = {name: 'dagre', 'nodeSep': 25,  'rankSep': 30, };
+  cy.fit();
+            </script>
+            <script>
+                 cy.add([ 
+                { group: 'nodes', data: { id: 'n0', value: 'String tag = request.input("tag");', href: 'Product.html?line=7'}},
+{ group: 'nodes', data: { id: 'n1', value: 'createOrUpdateProduct(name, price, tag);', href: 'Product.html?line=9'}},
+{ group: 'nodes', data: { id: 'n2', value: 'public void createOrUpdateProduct(String name, double price, String tag){', href: 'Product.html?line=13'}},
+{ group: 'nodes', data: { id: 'n3', value: 'tag = formater.formateData(tag);', href: 'Product.html?line=21'}},
+{ group: 'nodes', data: { id: 'n4', value: 'products.addTag(productId, tag);', href: 'Product.html?line=29'}},
+{ group: 'nodes', data: { id: 'n5', value: 'public void addTag(productId, tag){', href: 'Product.html?line=32'}},
+{ group: 'nodes', data: { id: 'n6', value: 'if(tag == null || tag.isEmpty()) {', href: 'Product.html?line=34'}},
+{ group: 'nodes', data: { id: 'n7', value: 'Notification.tag(productId, tag);', href: 'Product.html?line=37'}},
+{ group: 'nodes', data: { id: 'n8', value: 'public String formatData(String data){', href: 'Formater.html?line=3'}},
+{ group: 'nodes', data: { id: 'n9', value: 'String initial = data.trim();', href: 'Formater.html?line=4'}},
+{ group: 'nodes', data: { id: 'n10', value: 'String withoutScript = removeScriptContent(initial);', href: 'Formater.html?line=5'}},
+{ group: 'nodes', data: { id: 'n11', value: 'public String removeScriptContent(String data) {', href: 'Formater.html?line=11'}},
+{ group: 'nodes', data: { id: 'n12', value: 'if(data != null) {', href: 'Formater.html?line=12'}},
+{ group: 'nodes', data: { id: 'n13', value: 'Matcher matcher = pattern.matcher(data);', href: 'Formater.html?line=16'}},
+{ group: 'nodes', data: { id: 'n14', value: 'if (matcher.find()) {', href: 'Formater.html?line=17'}},
+{ group: 'nodes', data: { id: 'n15', value: 'return data.replace(matcher.group(1), "");', href: 'Formater.html?line=18'}},
+{ group: 'nodes', data: { id: 'n16', value: 'String finalData = Validator.clearRisk(withoutScript);', href: 'Formater.html?line=6'}},
+{ group: 'nodes', data: { id: 'n17', value: 'return finalData;', href: 'Formater.html?line=8'}},
+{ group: 'nodes', data: { id: 'n18', value: 'public void tag(String tag, Stirng productId){', href: 'Notification.html?line=3'}},
+{ group: 'nodes', data: { id: 'n19', value: 'for(int i = 0; i < user.length(); i++){', href: 'Notification.html?line=12'}},
+{ group: 'nodes', data: { id: 'n20', value: 'message = "New tag "+ tag +" added to product" + product.name()', href: 'Notification.html?line=13'}},
+{ group: 'nodes', data: { id: 'n21', value: 'channel.sendEmailMessage(user[i].getEmail(), message)', href: 'Notification.html?line=14'}},
+{ group: 'nodes', data: { id: 'n22', value: 'public void senEmailMessage(String email, String message)', href: 'Channel.html?line=3'}},
+{ group: 'nodes', data: { id: 'n23', value: 'String message = "<p>"+message+"</p>";', href: 'Channel.html?line=6'}},
+{ group: 'nodes', data: { id: 'n24', value: 'String finalMessage = heading+message;', href: 'Channel.html?line=7'}},
+{ group: 'nodes', data: { id: 'n25', value: 'mail.content(finalMessage);', href: 'Channel.html?line=11'}},
+{ group: 'edges', data: { id: 'e0', source: 'n0', target: 'n1', label:"tag" }},
+{ group: 'edges', data: { id: 'e1', source: 'n1', target: 'n2', label:"tag" }},
+{ group: 'edges', data: { id: 'e2', source: 'n2', target: 'n3', label:"tag" }},
+{ group: 'edges', data: { id: 'e3', source: 'n3', target: 'n8', label:"tag" }},
+{ group: 'edges', data: { id: 'e4', source: 'n8', target: 'n9', label:"data" }},
+{ group: 'edges', data: { id: 'e5', source: 'n9', target: 'n10', label:"initial" }},
+{ group: 'edges', data: { id: 'e6', source: 'n10', target: 'n11', label:"withoutScript" }},
+{ group: 'edges', data: { id: 'e7', source: 'n11', target: 'n12', label:"data"}},
+{ group: 'edges', data: { id: 'e8', source: 'n12', target: 'n13',  label:"data" }},
+{ group: 'edges', data: { id: 'e9', source: 'n13', target: 'n14',  label:"matcher" }},
+{ group: 'edges', data: { id: 'e10', source: 'n14', target: 'n15',  label:"matcher" }},
+{ group: 'edges', data: { id: 'e11', source: 'n15', target: 'n16',  }},
+{ group: 'edges', data: { id: 'e12', source: 'n16', target: 'n17',  }},
+{ group: 'edges', data: { id: 'e13', source: 'n17', target: 'n4',  }},
+{ group: 'edges', data: { id: 'e14', source: 'n4', target: 'n5',  }},
+{ group: 'edges', data: { id: 'e15', source: 'n5', target: 'n6',  }},
+{ group: 'edges', data: { id: 'e16', source: 'n6', target: 'n7',  }},
+{ group: 'edges', data: { id: 'e17', source: 'n7', target: 'n18',  }},
+{ group: 'edges', data: { id: 'e18', source: 'n18', target: 'n19',  }},
+{ group: 'edges', data: { id: 'e19', source: 'n19', target: 'n20',  }},
+{ group: 'edges', data: { id: 'e20', source: 'n20', target: 'n21',  }},
+{ group: 'edges', data: { id: 'e21', source: 'n21', target: 'n22',  }},
+{ group: 'edges', data: { id: 'e22', source: 'n22', target: 'n23',  }},
+{ group: 'edges', data: { id: 'e23', source: 'n23', target: 'n24',  }},
+{ group: 'edges', data: { id: 'e24', source: 'n24', target: 'n25',  }},
+                  ]);
+
+                 cy.layout(options).run();
+            </script>
+            <script type="text/javascript">
+              cy.on('tap', 'node', function(){
+                try { 
+                  window.open( this.data('href') );
+                } catch(e){
+                  window.location.href = this.data('href');
+                }
+              });
+            </script>
+
+            <script type="text/javascript">
+             $(".node-line").on("click", function(){
+              const nid = this.getAttribute("node");
+              const node = cy.getElementById(nid);
+
+
+          cy.zoom(7);
+          cy.center(node);
+          cy.nodes().style('background-color', '#007bff');
+          node.style('background-color', '#F27100');
+
+             })
+            </script>
+
+       
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
